@@ -4,6 +4,8 @@
 #          Section 7: Redistribution/Reuse of this code is permitted under the 
 #          GNU v3 license, as an additional term ALL code must carry the 
 #          original Author(s) credit in comment form.
+# This script requires below mentioned performance schema consumer to be enabled:
+# UPDATE performance_schema.setup_consumers SET enabled = 1 WHERE name = 'events_statements_history_long';
 
 import mysql.connector
 import smtplib
